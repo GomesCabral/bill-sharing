@@ -1,37 +1,39 @@
-# Flatmates Bill 💸
+# Flatmates Bill Calculator 💰💡
 
-This Python script calculates and generates a bill for flatmates living together. It computes the share of the bill each flatmate owes based on the number of days they've spent in the house.
+This Python script allows you to calculate and generate a bill for flatmates living together. It helps compute the share of the bill each flatmate owes based on the number of days they've spent in the house.
 
-## Usage
+## Usage 🚀
 
-### Installation
-- Clone the repository or download the code.
+### Setup
+1. Clone the repository or download the code.
 
-### Requirements
+### Requirements 🛠️
 - Python 3.x
-- fpdf library
+- Libraries: fpdf
 
-### Running the Script
+### Running the Script 🏡
 1. Open your terminal.
 2. Navigate to the directory where the code is saved.
 3. Run the script: `python flatmates_bill.py`.
 
-### Instructions
-- The script will prompt you to input the bill amount, period, names of the flatmates, and the number of days each flatmate stayed in the house.
-- After inputting the required information, the script will calculate the amount each flatmate needs to pay and generate a PDF report summarizing the bill details.
+### Instructions 📝
+- The script prompts you to input the bill amount, period, names of the flatmates, and the number of days each flatmate stayed in the house.
+- After inputting the required information, the script calculates the amount each flatmate needs to pay.
+- It generates a PDF report summarizing the bill details with payment information for both flatmates and the bill itself.
 
-## Code Structure
+## Code Structure 🧱
 
-### Classes
-- `Bill`: Contains data about a bill, including the total amount and period.
-- `Flatmate`: Represents individuals living in the flat and calculates their share of the bill.
-- `PdfReport`: Generates a PDF file containing details about the flatmates, their due amounts, and the period of the bill.
+### Classes and Functionality 🏠
+- `Bill`: Holds data about a bill, including the total amount and period.
+- `Flatmate`: Represents individuals in the flat, calculating their share of the bill based on days stayed.
+- `PdfReport`: Generates a PDF file detailing flatmates' due amounts and the bill's period.
 
-### Running the Script
-- The code will request user input for bill details, names, and days stayed for each flatmate.
-- It then creates instances of the `Bill` and `Flatmate` classes using the collected data and calculates the amount each flatmate needs to pay.
-- Finally, it generates a PDF report with payment details for both flatmates and the bill.
+### Running the Script 🔄
+- The code collects user input for bill details and flatmates' information.
+- It creates instances of the `Bill` and `Flatmate` classes using the collected data.
+- Calculates and displays the amount each flatmate needs to pay.
+- Generates a PDF report with payment details for both flatmates and the bill.
 
 ---
 
-Feel free to contribute or provide feedback to enhance this script further! 🚀
+Contributions and feedback are welcome to enhance this script! Feel free to explore and improve it further! 🛠️
