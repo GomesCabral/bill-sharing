@@ -14,7 +14,7 @@ This Python script allows you to calculate and generate a bill for flatmates liv
 ### Running the Script 🏡
 1. Open your terminal.
 2. Navigate to the directory where the code is saved.
-3. Run the script: `python flatmates_bill.py`.
+3. Run the script: `python main.py`.
 
 ### Instructions 📝
 - The script prompts you to input the bill amount, period, names of the flatmates, and the number of days each flatmate stayed in the house.
