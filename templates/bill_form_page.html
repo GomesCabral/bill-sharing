@@ -9,24 +9,37 @@
         <link rel="stylesheet" href="">
     </head>
     <body>
+        <!-- Link to the home page using Flask's url_for function -->
         <a href="{{url_for('home_page')}}">Home page</a>
+
+        <!-- Instructions for the user -->
         <p>Fill in the form and click the button to get the result</p>
         
+        <!-- Form for entering bill details and flatmates' information -->
         <form action="results" method="post">
+            <!-- Bill Amount input field with its label -->
             {{billform.amount.label}} {{billform.amount}}
             <br>
+            <!-- Bill Period input field with its label -->
             {{billform.period.label}} {{billform.period}}
             <hr>
+            <!-- Section for the details of the first flatmate -->
             <p>First Flatmate</p>
+            <!-- Name input field with its label for the first flatmate -->
             {{billform.name1.label}} {{billform.name1}}
             <br>
+            <!-- Days in the house input field with its label for the first flatmate -->
             {{billform.days_in_house1.label}} {{billform.days_in_house1}}
             <hr>
+            <!-- Section for the details of the second flatmate -->
             <p>Second Flatmate</p>
+            <!-- Name input field with its label for the second flatmate -->
             {{billform.name2.label}} {{billform.name2}}
             <br>
+            <!-- Days in the house input field with its label for the second flatmate -->
             {{billform.days_in_house2.label}} {{billform.days_in_house2}}
             <br><br>
+            <!-- Submit button to calculate and display results -->
             {{billform.button}}
         </form>
     </body>
