@@ -15,4 +15,4 @@ class Flatmate:
     def pays(self, bill, flatmate2):
         weight = self.days_in_house / (self.days_in_house + flatmate2.days_in_house) 
         to_pay = bill.amount * weight  
-        return f"{round(to_pay, 2)}£"  
+        return f"{round(to_pay, 2)}£" 

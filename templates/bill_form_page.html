@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Bill Form Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <a href="{{url_for('home_page')}}">Home page</a>
+        <p>Fill in the form and click the button to get the result</p>
+        
+        <form>
+            {{billform.amount.label}} {{billform.amount}}
+            <br>
+            {{billform.period.label}} {{billform.period}}
+            <hr>
+            <p>First Flatmate</p>
+            {{billform.name1.label}} {{billform.name1}}
+            <br>
+            {{billform.days_in_house1.label}} {{billform.days_in_house1}}
+            <hr>
+            <p>Second Flatmate</p>
+            {{billform.name2.label}} {{billform.name2}}
+            <br>
+            {{billform.days_in_house2.label}} {{billform.days_in_house2}}
+            <br><br>
+            {{billform.button}}
+        </form>
+    </body>
+</html>
